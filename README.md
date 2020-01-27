@@ -1,0 +1,1 @@
+Git para registro dos estudos de ACL baseado no treinamento gratuíto da EspecializaTi disponibilidado no youtube a partir do link: [Treinamento ACL Laravel](https://www.youtube.com/playlist?list=PLVSNL1PHDWvTch1r8uTSluw9SkzSA9cDJ);
