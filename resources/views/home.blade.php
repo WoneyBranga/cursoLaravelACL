@@ -6,7 +6,9 @@
         <h1>{{$post->title}}</h1>
         <p>{{$post->description}}</p>
         <b>Autor: {{$post->user->name}}</b>
-        <a href="{{url("/post/$post->id/update")}}">Editar</a>
+            @can('update-post', $post)
+                <a href="{{url("/post/$post->id/update")}}">Editar</a>
+            @endcan
         <hr>
     @empty
         <p>Nenhum Post Cadastrado</p>
