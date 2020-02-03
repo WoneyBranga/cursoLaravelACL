@@ -26,4 +26,9 @@ php artisan make:model Post -m
 ```bash
 php artisan make:policy PostPolicy --model=Post
 ```
-    
+
+## Aula 09 -
+```bash
+php artisan make:model Role -m
+php artisan make:model Permission -m
+```
