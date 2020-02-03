@@ -20,3 +20,10 @@ criação das migrations
 #php artisan make:model Notice -m
 php artisan make:model Post -m
 ```
+
+## Aula 07 - 
+
+```bash
+php artisan make:policy PostPolicy --model=Post
+```
+    
