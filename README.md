@@ -17,6 +17,6 @@ npm install && npm run dev
 
 criação das migrations
 ```bash
+#php artisan make:model Notice -m
 php artisan make:model Post -m
-php artisan make:Notice -m
 ```
