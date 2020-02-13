@@ -41,7 +41,7 @@ class User extends Authenticatable
 
     public function roles()
     {
-        $this->belongsToMany(\App\Role::class);
+        return $this->belongsToMany(\App\Role::class);
     }
 
     public function hasPermission(Permission $permission)
@@ -51,9 +51,10 @@ class User extends Authenticatable
 
     public function hasAnyRoles($roles)
     { 
+        
         if(is_array($roles) || is_object($roles)) {
             foreach($roles as $role) {
-                return $this->hasAnyRoles($role);
+                return $this->hasAnyRoles($role->name);
             }
         }
         
